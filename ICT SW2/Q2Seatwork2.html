@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    
+    <title>Q4Seatwork2</title>
+    <style>
+h1 { text-align: center;
+    font-family: Bodoni MT;
+}
+body { text-align: center;
+    background-color: grey;
+    font-family: Georgia;
+    </style>
+
+
+
+</head>
+<body>
+    <h1>Hi, Friend. I'm here to give you a Math challenge.</h1>
+    <form class="form-group">
+        <label>Enter the value of X:</label>
+            <input type="value" id="value1" class="form-control" placeholder="Enter a value for X">
+        <label>Enter the value of Y:</label>
+            <input type="value" id="value2" class="form-control" placeholder="Enter a value for Y">
+
+        <button type="button" class="btn btn-success" onclick="calculateSum()">Sum</button>
+        <button type="button" class="btn btn-danger" onclick="calculateDifference()">Difference</button>
+        <button type="button" class="btn btn-primary" onclick="calculateProduct()">Product</button>
+        <button type="button" class="btn btn-dark" onclick="calculateQuotient()">Quotient</button>
+
+        <details ontoggle="show()">
+            <summary>Click here!</summary>
+            <p>Click the buttons to calculate your answer.</p>
+        </details>
+
+    </form>
+
+    <script type="text/javascript">
+        function calculateSum(){ //copy lines 45 to 50 for the other calculations you want to perform
+        var $value1 = document.getElementById("value1").value;
+        var $value2 = document.getElementById("value2").value;
+        var $sum = Number($value1) + Number($value2);
+
+        window.alert("The sum of two values is " + $sum ); //display the answer by calling the sum variable
+        }
+
+        function calculateDifference(){ //copy lines 45 to 50 for the other calculations you want to perform
+        var $value1 = document.getElementById("value1").value;
+        var $value2 = document.getElementById("value2").value;
+        var $dif = Number($value1) value- Number($value2);
+
+        window.alert("The difference of two numbers is " + $dif ); //display the answer by calling the sum variable
+        }
+
+        function calculateProduct(){ //copy lines 39 to 45 for the other calculations you want to perform
+        var $value1 = document.getElementById("value1").value;
+        var $value2 = document.getElementById("value2").value;
+        var $product = Number($value1) * Number($value2);
+
+        window.alert("The sum of two values is " + $product ); //display the answer by calling the sum variable
+        }
+
+        function calculateQuotient(){ //copy lines 45 to 50 for the other calculations you want to perform
+        var $value1 = document.getElementById("value1").value;
+        var $value2 = document.getElementById("value2").value;
+        var $quotient = Number($value1) / Number($value2);
+
+        window.alert("The difference of two values is " + $quotient ); //display the answer by calling the sum variable
+        }
+
+        function show () {
+            alert("The ontoggle event occured"); //display this text from the ontoggle event above
+        }
+
+    </script>
+
+</body>
+</html>
